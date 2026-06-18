@@ -20,7 +20,7 @@ PI-LLM is designed as a surrogate modeling framework for RELAP5-generated LOCA t
 ```text
 LOCA_Pinns/
 ├── data/                         # RELAP5-derived LOCA datasets
-├── figures_results/              # Generated figures and experimental results
+├── figures_results/              # some experimental results
 ├── LLM_llama3/                   # LLM-related files
 ├── llm_weights/                  # Local LLM weights
 ├── models/
@@ -31,7 +31,6 @@ LOCA_Pinns/
 │   │   ├── s2t.py                # Self-supervised S2T module
 │   │   └── sace.py               # SaCE contrastive embedding module
 │   ├── PINN_add.py               # PINN-related implementation
-├── savepoints/                   # Model checkpoints
 ├── utils/
 │   ├── metrics.py                # Evaluation metrics
 │   ├── plots.py                  # Visualization utilities
