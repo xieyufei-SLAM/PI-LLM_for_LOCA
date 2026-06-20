@@ -1,0 +1,2 @@
+The Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes
+please download from: https://www.modelscope.cn/models/LLM-Research/Llama-3.2-3B-Instruct

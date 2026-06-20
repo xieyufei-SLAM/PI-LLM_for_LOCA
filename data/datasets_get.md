@@ -1,0 +1,1 @@
+Although the data are generated from numerical simulations rather than real plant operational records, they are related to nuclear engineering accident analysis and involve multiple institutions with confidentiality and data-security requirements. Therefore, the dataset must undergo institutional review and approval before public release. The review process is currently ongoing.
