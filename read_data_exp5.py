@@ -142,11 +142,10 @@ def reconstuct_data(var_list, file_path, pipeline, index__pipeline:list):
             for index, sheet_name in enumerate(sheet_names):
                 # 遍历每个 sheet 的数据
                 if index == 0:
-                    data = excel_data[sheet_name].iloc[800:]  # 跳过第一行数据
+                    data = excel_data[sheet_name].iloc[:]  # 跳过第一行数据
                     q_t = data['q']
                 if sheet_name in index__pipeline:
                     for index_t, t in enumerate(times):
-                        index_t = index_t+800
                         data = excel_data[sheet_name].iloc[:]  # 跳过第一行数据
                         x_t = generate_value(sheet_name,data_dict)
                         a_t = data.iloc[index_t]['avol']
@@ -158,7 +157,6 @@ def reconstuct_data(var_list, file_path, pipeline, index__pipeline:list):
                 # elif index_t % 5 == 0:
                 else:
                     for index_t, t in enumerate(times):
-                        index_t = index_t + 800
                         data = excel_data[sheet_name].iloc[:]  # 跳过第一行数据
                         x_ = generate_value(sheet_name,data_dict)
                         a_ = data.iloc[index_t]['avol']
