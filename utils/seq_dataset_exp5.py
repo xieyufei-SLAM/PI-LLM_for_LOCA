@@ -53,7 +53,7 @@ def build_prompt(seg, sub_name):
     return domain + " " + task + " " + data
 
 
-def load_segment_signals(file_path, seg, start_idx=800):
+def load_segment_signals(file_path, seg, start_idx=1):
 
     subs = PIPELINES[seg]
     signals = {}
