@@ -142,7 +142,7 @@ def reconstuct_data(var_list, file_path, pipeline, index__pipeline:list):
             for index, sheet_name in enumerate(sheet_names):
                 # 遍历每个 sheet 的数据
                 if index == 0:
-                    data = excel_data[sheet_name].iloc[800:]  # 跳过第一行数据
+                    data = excel_data[sheet_name].iloc[:]  # 跳过第一行数据
                     q_t = data['q']
                 if sheet_name in index__pipeline:
                     for index_t, t in enumerate(times):
