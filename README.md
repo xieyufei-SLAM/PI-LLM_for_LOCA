@@ -31,6 +31,7 @@ LOCA_Pinns/
 ├── download_llm.py               # LLM weight download script
 ├── main_exp5.py                  # Baseline/experiment entry script
 └── main_pi_llm.py                # Main entry script for PI-LLM
+└── main_multi_gpus.py                # Main entry script for PI-LLM using 8-gpus
 ```
 
 ## Environment Setup
@@ -115,13 +116,6 @@ savepoints/
 figures_results/
 ```
 
-## Baseline Experiments
-
-Baseline models such as PINN and KAN are implemented under `models/`. The baseline experiment entry can be run with:
-
-```bash
-python main_exp5.py
-```
 
 ## Outputs and Evaluation
 
@@ -158,3 +152,15 @@ If this repository is useful for your research, please cite:
   year    = {2026}
 }
 ```
+## Acknowledgement
+
+We sincerely thank the authors of Time-LLM for open-sourcing their implementation.
+
+If you use the related components, please also consider citing the original Time-LLM paper:
+
+@inproceedings{jin2023time,
+  title={{Time-LLM}: Time series forecasting by reprogramming large language models},
+  author={Jin, Ming and Wang, Shiyu and Ma, Lintao and Chu, Zhixuan and Zhang, James Y and Shi, Xiaoming and Chen, Pin-Yu and Liang, Yuxuan and Li, Yuan-Fang and Pan, Shirui and Wen, Qingsong},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2024}
+}
