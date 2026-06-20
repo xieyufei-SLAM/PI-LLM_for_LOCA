@@ -69,7 +69,7 @@ def build_prompt(seg, sub_name):
     return domain + " " + task + " " + data
 
 
-def load_segment_signals(file_path, seg, start_idx=800):
+def load_segment_signals(file_path, seg, start_idx=1):
     """读取某一段所有子管道的原始信号。
 
     返回 dict: {sub_name: ndarray[L, 14]}，列顺序 = INPUT_COLS + VAR_LIST。
